@@ -15,6 +15,7 @@ header{
 	background-size: cover;
 	background-repeat: no-repeat;
 	height:100vh;
+
 }
 
 .row{
@@ -40,20 +41,28 @@ header{
 	display: inline-block;
 	list-style: none;
 	margin-left: 40;
+	text-decoration: inherit;
 }
 
 
 .main-nav li a{
 	color: #fff;
-	text-decoration: none;
+	text-transform: 0.9s;
+	text-decoration: inherit;
 	text-transform: uppercase;
+	content: '';
 	font-size: 90%;
 	font-weight: 100;
+	transition-delay: 0.4s;
+	transition: 1.0s;
+	transform: scaleX(0);
+	transition: transform 250ms ease-in-out;
 }
 
 .main-nav li a:hover{
 	border-bottom: 2px solid #bf55ec;
-	padding: px 0px; 
+	padding: px 0px;
+	/*transform: scaleX(11); */
 }
 
 
@@ -64,6 +73,8 @@ header{
 	top:55%;
 	left:50%;
 	transform: translate(-50%,-50%);
+	transition-delay: 0.1s;
+	text-transform: 0.9s;
 }
 
 
@@ -119,6 +130,22 @@ header{
 
 .dropdown:hover .dropbtn {
 	background-color: none;
+}
+
+
+i {
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2.5px;
+  margin-bottom: 2px;
+  margin-left: 1px;
+}
+
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 
