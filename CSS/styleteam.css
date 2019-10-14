@@ -1,21 +1,80 @@
-.team{
-	margin:75px 0;
+/* --------------------TOUR-------------- */
 
-}
-
-h1{
+body{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
 	text-align: center;
-	font-weight: bold;
-	letter-spacing: 2px;
-	color:#333;
-	padding-bottom: 10px;
+	justify-content: center;
+	background:url("./images/tourbackground.jpg");
+	overflow: hidden;
 }
 
-h1:after{
-	content:'';
-	background: #333;
-	display: block;
-	height: 3px;
-	width:150px;
-	margin: 10px auto;
+
+
+/* --------------------TOUR-------------- */
+
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../Images/team-background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height:100vh;
+
 }
+
+
+
+.column {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+
