@@ -1,4 +1,6 @@
-body{
+html,body{overflow-y: scroll; }
+
+body {
 	width: 100vw;
 	height: 100vh;
 	display: flex;
@@ -8,19 +10,24 @@ body{
 	background-size: cover;
 	background-repeat: no-repeat;
 	height:100vh;
-	overflow: hidden;
 }
 
-.card{
+.wrap {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.card {
 	display:grid;
 	grid-template-columns: auto auto auto auto;
 	grid-template-rows: 210px 210px 80px;
 	grid-template-areas: "image" "text" "stats";
-	border-radius: 20px;
+	
 
-
-	height: 0;
-	width:22%;
+	margin: 17px;
+	margin-top: 40px;
+	height: 22rem;
+	width: 85%;
 	justify-content:space-around;
 	padding-bottom: 35.25%;
 
@@ -32,7 +39,6 @@ body{
 
 	transition: 0.5s ease;
 	cursor: pointer;
-
 }
 
 .card-image{
@@ -42,6 +48,7 @@ body{
 	border-top-right-radius: 15px;
 	background-size: cover;
 }
+
 .card-image-triund{
 	grid-area: image;
 	background-image: url("../images/triund.jpg");
@@ -49,9 +56,17 @@ body{
 	border-top-right-radius: 15px;
 	background-size: cover;
 }
+
 .card-image-l{
 	grid-area: image;
 	background-image: url("../images/l.jpg");
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	background-size: cover;
+}
+
+.imgStyle {
+	grid-area: image;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
 	background-size: cover;
@@ -127,5 +142,5 @@ body{
 .card:hover {
   -ms-transform: scale(1.5); /* IE 9 */
   -webkit-transform: scale(1.5); /* Safari 3-8 */
-  transform: scale(1.5); 
+  transform: scale(1.10);
 }
