@@ -1,4 +1,12 @@
 html,body{overflow-y: scroll; }
+.logo{
+	height: 120px;
+	width: 10%;
+	float: center;
+	display: center;
+	margin-top: 20px;
+
+}
 
 body {
 	width: 100vw;
