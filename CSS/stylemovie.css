@@ -1,0 +1,42 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+
+
+body{
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url("../images/movie/netnflix.jpg" );
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height:100vh;
+	opacity: 0;
+
+
+}
+.logo{
+	height: 120px;
+	width: 10%;
+	float: left;
+	margin-top: 20px;
+
+}
+
+
+.header{
+	height: 10%;
+}
+
+.header-btn{
+	text-decoration: none ! important;
+	display:block;
+	border-radius: 30px;
+	padding: 7px 20px;
+	float:right;
+	margin-top: 15px;
+	color:#fff !important ;
+	background: #bf55ec;
+	font-weight:600;
+	
+}
