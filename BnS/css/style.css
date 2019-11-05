@@ -5,19 +5,151 @@
   font-weight: normal;
   font-style: normal;
 }
-/* =======================================================
-*
-* 	Template Style 
-*
-* ======================================================= */
+
 body {
   font-family: "Source Sans Pro", Arial, sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.7;
   color: #828282;
-  background: #fff;
+ 
 }
+
+/*........---------------------index pagae.......*/
+
+.row{
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.logo{
+  height: 120px;
+  width: 10%;
+  float: left;
+  margin-top: 20px;
+
+}
+
+.main-nav{
+  float: right;
+  margin-top: 20%;
+  margin-top: 60px;
+}
+
+.main-nav li{
+  display: inline-block;
+  list-style: none;
+  margin-left: 40;
+  text-decoration: inherit;
+}
+
+
+.main-nav li a{
+  color: #fff;
+  text-transform: 0.9s;
+  text-decoration: inherit;
+  margin-right: 20px;
+
+  text-transform: uppercase;
+  content: '';
+  font-size: 90%;
+  font-weight: 100;
+  transition-delay: 0.4s;
+  transition: 1.0s;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+
+.main-nav li a:hover{
+  border-bottom: 2px solid #bf55ec;
+  padding: px 0px;
+  /*transform: scaleX(11); */
+}
+
+
+.main-content-header{
+  width: 1180px;
+  color: #fff;
+  position: absolute;
+  top:55%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  transition-delay: 0.1s;
+  text-transform: 0.9s;
+}
+
+
+.dropbtn {
+  display: inline-block;
+  list-style: none;
+  margin-left: 40;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  font-weight: 100;
+}
+
+
+.dropbtn :hover{
+  border-bottom: 2px solid #bf55ec;
+  padding: px 0px;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: lightblue;
+  padding: 5px 0px;
+  text-decoration: none;
+  display: block;
+  font-size: 110%;
+}
+
+.dropdown-content :hover {
+  border-bottom: 2px solid #bf55ec;
+  padding: px 0px; 
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+  background-color: none;
+}
+
+
+
+
+@keyframes colorchangecare{
+  0%{color: red}
+  25%{color: white}
+  50%{color: yellow }
+  100{color: #bf55ec}
+}
+
+
+
+
+
+
+
+/*.....----------------------------------------------------------------------------..........*/
 
 #page {
   position: relative;
